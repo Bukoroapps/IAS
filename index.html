@@ -80,7 +80,6 @@
         </div>
       </div>
     </div>
-
   <section id="services" class="bg-light">
     <div class="container">
       <div class="row">
@@ -112,10 +111,41 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2>Fundamental Aspects</h2>
-<p class="lead"><strong>History and terminology</strong></p>
-<p class="lead">Terminology is a discipline that systematically studies the "labelling or designating of concepts" particular to one or more subject fields or domains of human activity. It does this through the research and analysis of terms in context for the purpose of documenting and promoting consistent usage.<p>
-<p class="lead"><strong>Security mindset (reasoned paranoia)</strong></p>
-<p class="lead">Good engineering involves thinking about how things can be made to work; the security mindset involves thinking about how things can be made to fail. It involves thinking like an attacker, an adversary or a criminal.</p>
+		  	<button onclick="myFunction()"><p class="lead"><strong>History and terminology</strong></p></button>
+
+<div id="myDIV" style="display: none;">
+Terminology is a discipline that systematically studies the "labelling or designating of concepts" particular to one or more subject fields or domains of human activity. It does this through the research and analysis of terms in context for the purpose of documenting and promoting consistent usage.
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<br>
+<br>
+
+<button onclick="myFunction1()"><p class="lead"><strong>Security mindset (reasoned paranoia)</strong></p></button>
+
+<div id="myDIVI" style="display: none;">
+Good engineering involves thinking about how things can be made to work; the security mindset involves thinking about how things can be made to fail. It involves thinking like an attacker, an adversary or a criminal.
+</div>
+<script>
+function myFunction1() {
+  var x = document.getElementById("myDIVI");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+
 <p class="lead"><strong>Design principles (defense in depth</strong></p>
 <p class="lead">Image result for Design principles (defense in depth)
 Defense in Depth (DiD) is an approach to cybersecurity in which a series of defensive mechanisms are layered in order to protect valuable data and information. If one mechanism fails, another steps up immediately to thwart an attack.</p>
